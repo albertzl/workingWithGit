@@ -165,7 +165,7 @@ a:focus {
 
 .step {
     position: relative;
-    width: 1000px;
+    width: 900px;
     padding: 40px;
     margin: 20px auto;
 
@@ -209,9 +209,9 @@ a:focus {
 .slide {
     display: block;
 
-    width: 1000px;
+    width: 900px;
     height: 700px;
-    padding: 20px 40px;
+    padding: 40px 60px;
 
     background-color: white;
     border: 1px solid rgba(0, 0, 0, .3);
@@ -265,6 +265,7 @@ a:focus {
 #home .footnote {
     font-size: 32px;
 }
+
 #title {
     padding: 0;
 }
@@ -397,11 +398,29 @@ a:focus {
 */
 
 #imagination {
-    width: 600px;
+    width: 640px;
 }
 
 #imagination .imagination {
     font-size: 78px;
+}
+
+/*
+    The 'substeps' step has some substeps. These substeps are hidden at first and then shown later.
+    1. If the height is not specified, the vertical-center of the step will change when the height changes dynamically.
+       When using substeps that are showing content that alter the height, make sure to specify the height.
+*/
+#substeps {
+    width: 640px;
+    height: 230px; /* 1 */
+}
+
+#substeps .areThere, #substeps .ofCourse {
+    display: none;
+}
+
+#substeps .areThereVisible, #substeps .ofCourceVisible {
+    display: inline-block;
 }
 
 /*
